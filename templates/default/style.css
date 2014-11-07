@@ -1,0 +1,739 @@
+/* 
+SM-Online Default Style
+Author:   Matt Harris
+Date:     15 June 2005
+*/
+
+/* ---( page defaults )--- */
+
+html, body {
+	margin: 0;
+	padding: 0;
+	text-align: center; /* for IE stupidity */
+}	
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  font-size: 13px;
+  text-align: center;
+  color: #333;
+  background: #e0e0e0;
+  min-width: 768px;
+  }
+
+abbr, acronymn, acronym {
+  cursor: help;
+  font-style: normal;
+  border-bottom: 1px dashed;
+  }
+
+code {
+  color: #006699;
+  }
+
+hr {
+  display: none;
+  }
+
+img {
+  border: none;
+  }
+
+li {
+  padding-left: 14px;
+  margin-bottom: 3px;
+  list-style-position: inside;
+  }
+
+/* links */
+
+a:link {
+  color: #69c;
+  }
+
+a:visited {
+  color: #666699;
+  }
+
+a:hover {
+  color: #693;
+  }
+
+a:active {
+  color: #006699;
+  text-decoration: none;
+  }
+
+/* ---( layout structure )---*/
+
+div#wrap {
+	position: relative;
+	width: 768px;
+	padding: 0;
+	margin: 0 auto;
+	text-align: left;
+	background: url("images/wrap.gif") repeat-y; 
+}
+
+div#content {
+	position: relative;
+	margin: 0 37px;
+}
+
+div#main-content {
+	width: 650px;
+	float: left;
+	margin: 0;
+	padding: 0 20px;
+	line-height: 1.5em;
+}
+
+
+/* ---( header and site name )--- */
+
+#header {
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+	height: 138px;
+	font-family: "Lucida Grande", "Trebuchet MS";
+	background: #e0e0e0 url("images/header.gif") no-repeat top left;
+	border-bottom: 1px solid #111111;
+}
+
+/* ---( Footer )--- */
+
+.clear { /* to fix IE6 padding-top issue */
+	clear: both;
+	height: 0;
+}
+
+#footer {
+	margin: 0;
+	padding: 0 0 9px 0;
+	font-size: 80%;
+	color: #cacaca;
+	background-color: #999999;
+	font-family: Tahoma, Arial, sans-serif;
+	border-top: 1px #111111 solid;
+	margin: 0 37px;
+}
+
+#footer p {
+	margin: 0;
+	padding: 10px;
+}
+  
+#footer a {
+	color: #cacaca;
+}
+
+#footer a:hover {
+	text-decoration: none;
+}
+
+/* ################################################################# */
+
+/* ---( Basic Elements )--- */
+h2 {
+	color: #006699;
+	line-height: 1.5em;
+}
+
+br {
+	clear: both;
+}
+
+
+
+/* ---( Forms )--- */
+
+label,input, select {
+	display: block;
+	width: 200px;
+	float: left;
+	margin: 2px;
+	margin-bottom: 10px;
+	
+}
+
+label {
+	font-weight: bolder;
+	text-align: right;
+	width: 150px;
+	padding-right: 20px;
+	
+}
+
+label.spanned {
+	width: auto;
+	padding: 0;
+}
+
+input#submit_button {
+	width: auto;
+	margin: 15px auto;
+	margin-left: 90px;
+	text-align: center;
+}
+
+input.hidden {
+	margin: -50px;
+	height: 1px;
+	visibility: hidden;
+	display: none;
+}
+
+input.default, label.default {
+	display: inline;
+	width: auto;
+	float: none;
+	margin: 0;
+	padding: 0;
+}
+
+fieldset {
+	padding: 10px;
+	margin-bottom: 10px;
+	background: url("images/fieldset_bg.gif") repeat-x bottom;
+	text-align: left;
+}
+
+fieldset legend {
+	font-weight: bold;
+	font-size: 120%;
+	padding: 3px 10px;
+	/* border: 1px solid grey; */
+}
+
+select {
+	width: auto;
+}
+
+form br {
+	clear: left;
+}
+
+form {
+	font-size: 90%;
+}
+
+div.checkboxes {
+	text-align: left;
+	margin-left: 50px;
+}
+
+div.checkboxes input {
+	display: inline;
+	margin-right: 10px;
+	width: auto;
+	margin-bottom: -5px;
+}
+
+div.checkboxes span {
+	min-width: 150px;
+	display: inline;
+	float: left;
+	margin-right: 15px;
+}
+
+/* ---( Errors )--- */
+div.error_message {
+	color: red;
+	font-weight: bold;
+	float: left;
+	font-size: 70%;
+	padding-left: 25px;
+	margin-left: 5px;
+	background: url("images/error_arrow.gif") no-repeat 0 0;
+}
+
+div.error_message#required {
+	display: inline;
+	float: left;
+	background: none;
+	font-size: 125%;
+	font-weight: bold;
+	padding-left: 0;
+	margin-left: 3px;
+}
+
+div.error_message#no_arrow {
+	background: none;
+	padding-left: 0;
+}
+
+div.error_summary {
+	border: 1px dotted #111111;
+	padding: 5px 5px 10px 79px;
+	margin: 20px;
+	background: url("images/caution.gif") no-repeat 5px 5px;
+	min-height: 60px;
+	background-color: #FFC;
+}
+
+div.error_summary h3 {
+	margin: 0;
+}
+
+
+/* ---( Progress Bar )--- */
+div.progress_bar {
+	float: left;
+	margin-top: 3px;
+	margin-bottom: 0;
+	margin-left: 0;
+	width: 110%;
+}
+
+div.progress_bar ul {
+	display: block;
+	list-style:none;
+	padding: 0;
+	margin: 0;
+}
+
+div.progress_bar li {
+	padding: 6.5px;
+	padding-left: 0;
+	display: inline;
+	list-style: none;
+	float: left;
+	vertical-align: bottom;
+	color: #111111;
+	margin-top: -1px;
+	font: bold 10px/11px "Arial Narrow", Arial, Tahoma, sans-serif;
+	text-transform: uppercase;
+}
+
+div.progress_bar li a {
+	display: block;
+	margin: 0;
+	padding-left: 12px;
+	font: bold 10px/12px "Arial Narrow", Arial, Tahoma, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	color: #111111;
+	background: url("images/progress_arrow.gif") no-repeat left;
+}
+
+div.progress_bar li a:hover {
+	text-shadow: #006699 0px 0px 3px;
+	color: #000000;
+}
+
+div.progress_bar li#current a {
+	color: #006699;
+	border-bottom: 0;
+}
+
+div.progress_bar li#not_yet a {
+	font-weight: normal;
+	color: #cacaca;
+	cursor: default;
+	background: url("images/progress_arrow_light.gif") no-repeat left;
+}
+
+div.progress_bar li#not_yet a:hover {
+	color: #cacaca;
+	text-shadow: none;
+}
+
+div.progress_bar li#start_over a {
+	background: none;
+	padding-left: 0;
+}
+
+div.progress_bar li#title {
+	padding: 11px 5px 3px 0;
+	margin-left: 0px;	/* -10px */
+	font-size: 12px;
+}
+
+
+/* ---( Random Other Things )--- */
+div#major_description, div.info_box {
+	border: 1px dotted #111111;
+	padding: 10px 10px 10px 74px;
+	margin: 10px;
+	background: url("images/info.gif") no-repeat 5px 5px;
+	background-color: #FFC;
+	min-height: 52px;
+	font-size: 11px;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled="true", sizingMethod="scale", src="images/info.gif");
+}
+
+div.button {
+	font: 12px "Arial Narrow", Arial, Tahoma, sans-serif;
+	display: inline;
+}
+
+div.button#right {
+	float: right;
+}
+
+div.button a {
+	display: block;
+	padding: 5px 0px 5px 5px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: 006699;
+}
+
+div.button a:hover {
+	text-shadow: #111111 0px 0px 7px;
+	color: #111111;
+}
+
+div.payment_note {
+	width: 95%;
+	border: 1px red dashed;
+	font-size: 90%;
+	padding: 5px;
+	margin: 10px;
+}
+
+
+/* ---( Help System )--- */
+
+div.help_link_container {
+	float: left;
+	display: inline;
+	margin-left: 5px;
+	min-width: 19px;
+	height: 20px;
+}
+
+div.help_link_container a {
+	display: block;
+	width: 20px;
+	text-decoration: none;
+}
+
+div.help_link_container a span.icon {
+	background: url("images/help.gif") no-repeat bottom;
+	padding: 5px;
+}
+
+div.help_link_container a:hover span.icon {
+	background: url("images/help_over.gif") no-repeat bottom;
+	padding: 5px;
+}
+
+
+body.help_content {
+	margin: 0;
+  	padding: 15px;
+  	font: 12px/15px Verdana, sans-serif;
+  	color: #333;
+  	background: #e0e0e0;
+  	text-align: left;
+}
+
+body.help_content div.main {
+	padding: 10px;
+	border: 1px solid #111111;
+	border-top: 0;
+	background-color: #ffc;
+	min-height: 200px;
+	clear: both;
+}
+
+body.help_content div.main h2 {
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+body.help_content div.toolbar {
+	margin-bottom: 0;
+	border: 1px solid #111111;
+	font: 12px "Arial Narrow", Arial, Verdana, sans-serif;
+	text-transform: uppercase;
+	vertical-align: middle;
+	height: 24px;
+	background: url("images/button.gif") repeat-x;
+}
+
+body.help_content div.toolbar div.content {
+	display:inline;
+	background: url("images/help.gif") no-repeat 3px 3px;
+	padding-left: 25px;
+	padding-top: 6px;
+	float: left;
+}
+
+
+/* ---( Training )--- */
+table.training, table.classschedule {
+	font-size: 90%;
+	border: 1px solid #111111;
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 10px 0;
+	width: 100%;
+}
+
+table.training td, table.training th, table.classschedule td, table.classschedule th {
+	vertical-align: top;
+	padding: 3px;
+	padding-left: 7px;
+}
+
+table.training th, table.classschedule th {
+	text-align: left;
+	background: url("images/button.gif") repeat-x;
+	border-bottom: 1px solid #111111;
+}
+
+table.training tr#even {
+	background-color: #eeeeee;
+}
+
+table.training div.button#right a, table.classschedule div.button#right a {
+	margin-top: -10px;
+	padding: 3px 0 0 0;
+	vertical-align: top;
+}
+
+
+/* ---( Trading Post )--- */
+div.trading_post {
+	display: inline;
+	border: 1px solid #cacaca;
+	padding: 10px;
+	float: left;
+	margin: 0 20px 20px 0;
+	width: 180px; 
+	min-height: 180px; 
+	text-align: center;
+	line-height: 13px;
+}
+
+div.trading_post:hover {
+	background-color: #eee;
+}
+
+div.trading_post img {
+	margin-right: -20px;
+	border: 0;
+	cursor: hand;
+}
+
+div.trading_post #title {
+	font-weight: bold;
+}
+
+div.trading_post #description, div.trading_post #price {
+	color: #444;
+}
+
+div.trading_post input.quantity {
+	width: 3em;
+	margin: 4px;
+	float: none;
+	display: inline;
+}
+
+div.trading_post select.product_option {
+	width: 90%;
+	max-width: 90%;
+	margin: 4px;
+	float: none;
+	display: inline;
+}
+
+div.trading_post label {
+	display: inline;
+	width: auto;
+	float: none;
+	margin: 4px;
+	padding: 0;
+}
+
+div.trading_post #price {
+	float:none;
+	margin: 4px;
+}
+
+
+
+/* ---( Zoom Link )--- */
+
+a.zoom_link {
+	float: right;
+	display: inline;
+/*	margin-top: -100px; */
+/*	margin-left: -40px; */
+	width: 20px;
+	height: 20px;
+	text-decoration: none;
+}
+
+a.zoom_link span.icon {
+	background: url("images/zoom.gif") no-repeat bottom;
+	padding: 5px;
+}
+
+a.zoom_link:hover span.icon {
+	background: url("images/zoom_over.gif") no-repeat bottom;
+	padding: 5px;
+}
+
+
+/*---( Processing... )--- */
+div.processing {
+	border: 1px solid #111111;
+	margin: 100px 30px;
+	width: 400px;
+	padding: 15px;
+	text-align: center;
+	background-color: white;
+	font-size: 90%;
+}
+
+div.processing img {
+	margin: 10px;
+}
+
+
+/*---( Shopping Cart )--- */
+table.cart {
+	font-size: 90%;
+	border: 1px solid #111111;
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 10px 0;
+	width: 100%;
+	line-height: 12px;
+}
+
+table.cart td, table.cart th {
+	padding: 3px;
+	text-align: center;
+}
+
+table.cart th {
+	background: url("images/button.gif") repeat-x;
+	border-bottom: 1px solid #111111;
+}
+
+table.cart tr td {
+	height: 35px;
+}
+
+table.cart tr#even {
+	background: url("images/grey_row_bg.gif") repeat-x top;
+}
+
+table.cart tr#coupon {
+	background: url("images/coupon_bg.gif") repeat-x top;
+}
+
+table.cart td#description, table.cart th#description {
+	text-align: left;
+}
+
+table.cart td#image {
+	text-align: center;
+	width: 30px;
+	padding: 3px 10px;
+}
+
+table.cart font#item {
+	font-weight: bold;
+	color: #444;
+}
+
+table.cart font#description {
+	color: #666;
+}
+
+table.cart td#quantity input {
+	width: 1.5em;
+	text-align: center;
+	margin: .4em 0 0 2em;
+}
+
+table.cart td#coupon div {
+	display: inline;
+	border: 1px #111111 dotted;
+	margin: 10px;
+	padding: 4px;
+	float: left;
+	background: url("images/coupon_bg.gif") repeat-x top;
+}
+
+table.cart td#coupon div td#image {
+	width: 38px;
+	height: 30px;
+	background: url("images/coupon.gif") no-repeat;
+}
+
+table.cart td#coupon div i {
+	float: left;
+	margin-bottom: 5px;
+}
+
+table.cart td#coupon div input#coupon_code {
+	width: 8em;
+}
+
+table.cart td#coupon div input#redeem {
+	height: 1.5em;
+}
+
+table.cart a#remove_button {
+	display: block;
+	padding: 5px;
+	margin: 5px 8px 0 3px;
+	background: url("images/trash.gif") no-repeat;
+	float: right;
+	text-decoration: none;
+}
+
+table.cart td#item_total {
+	font-size: 120%;
+	text-align: right;
+	padding-right: 10px;
+}
+
+table.cart tr#subtotal td {
+	border-top: 1px solid #111111;
+	text-align: right;
+	padding-right: 10px;
+}
+
+table.cart tr#subtotal td input#button {
+	width: auto;
+}
+
+table.cart tr#shipping td {
+	text-align: right;
+	padding-right: 10px;
+}
+
+table.cart tr#total td {
+	font-size: 130%;
+	font-weight: bold;
+	text-align: right;
+	padding: 10px;
+	padding-right: 10px;
+	color: #006699;
+}
+
+
+/* ---(Receipt)--- */
+table.receipt {
+	margin: 2px;
+	width: 100%;
+}
+
+table.receipt td {
+	vertical-align: top;
+	font-size: 90%;
+	padding: 2px;
+}

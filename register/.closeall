@@ -1,0 +1,6 @@
+#
+# if this file ("closeall") exists, then the entire SM section shuts down.
+#
+
+# to allow specific ip's, list them here:
+24.16.34.33

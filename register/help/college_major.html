@@ -1,0 +1,32 @@
+<?
+	$title = "How does \"University\" training work?";
+	if ($_REQUEST['event_id']==2)
+	{
+		print "
+		<ul>
+			<li><b>If this is your first year</b> participating in the University training program, you have the chance to earn
+			a Bachelor of Scouting degree in one of the many different areas of the Order of the Arrow.</li>
+			<li><b>If you already have your Bachelors Degree,</b> you can earn your Masters Degree.  This does not need to be in the same college
+			as your Bachelors Degree from last year.  If you will be seeking your Doctorate Degree next year, you must attend the 
+			Doctorate Preparation (Train the Trainer) course during the second session.</li>
+			<li><b>If already have your Masters Degree,</b> you can earn your Doctorate Degree by training or helping to train at least
+			one session.  You should also attend the Doctorate Preparation (Train the Trainer) course during the second session.</li>
+		</ul>";
+	}
+	else
+	{
+		print "
+		<ul>
+			<li><b>If this is your first year</b> participating in the University training program, you have the chance to earn
+			an Associate's Degree in one of the many different areas of the Order of the Arrow.</li>
+			<li><b>If you already have your Associate's Degree,</b> you can earn your Bachelor's Degree.  This does not need to be in the same college
+			as your Associate's Degree.</li>
+			<li><b>If you already have your Bachelor's Degree,</b> you have the chance to earn a Master's Degree.  If you're interested in earning
+			a Doctorate Degree <i>next year</i>, this year at Conclave will be a good place to get ideas for your project.</li>
+			<li><b>If you have your Master's Degree,</b> you should meet with the Training CVC at
+			Conclave to find out what you will need to do to earn your Doctorate Degree.</li>
+			<li><b>If you are a staff member</b> and do not plan on attending all class sessions, please select \"STAFF\" in the major
+			selection dropdown box below.</li>
+		</ul>";
+	}
+?>

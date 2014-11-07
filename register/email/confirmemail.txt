@@ -1,0 +1,45 @@
+Dear <<firstname>>,
+
+Thank you for placing an order online with Section W-1A.  This is your e-mail confirmation, and also your receipt.  We recommend that you print this e-mail and keep a copy for your records. To see your Confirmation page, reminders, and directions to Conclave, click here:
+https://secure.webhostworks.net/secure/w1a.org/oareg/final.php?id=<<ID_number>>&pw=<<password>>
+
+Please verify the following information to ensure it is correct.  If something is incorrect, please let us know by sending an e-mail to webmaster@w1a.org with any corrections.
+
+----BILLING INFORMATION--------------------------------------------------
+Conclave ID: <<ID_number>>
+<<firstname>> <<lastname>>
+<<address>>
+<<city>>, <<state>>  <<zip>>
+<<phone>>
+<<email>>
+
+----ORDER INFORMATION----------------------------------------------------
+<<purchase_table>>
+
+----PAYMENT INFORMATION--------------------------------------------------
+<<amount_paid>>
+Payment Method: <<cc_type>>
+Card Number: <<cc_secure>>
+Order Number: <<ordernum_ID>>
+
+----KTEMAQUE UNIVERSITY SCHEDULE-----------------------------------------
+Selected major: <<college_major>>
+Degree level: <<next_degree>>
+
+Session 1: <<session_1>>
+Session 2: <<session_2>>
+Session 3: <<session_3>>
+Session 4: <<session_4>>
+
+-------------------------------------------------------------------------
+
+Should you have any questions about your registration or purchase, please send an e-mail to webmaster@w1a.org, or for more information about Conclave 2004 please visit us online at http://www.w1a.org. Thank you!
+
+Sincerely,
+
+The Section W-1A Web Team
+
+-------------------------------------------------------------------------
+   Registration system built by WebHostWorks.net of Portland, Oregon
+      http://www.WebHostWorks.net  (503) 460-9041  (800) DEV-NULL
+-------------------------------------------------------------------------

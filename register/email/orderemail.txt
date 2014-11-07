@@ -1,0 +1,27 @@
+                SECTION W-1A - ONLINE ORDER INVOICE
+
+Section W-1A                           ORDER FROM: <<firstname>> <<lastname>>
+Oregon Trail Council, BSA                          <<address>>
+2525 Centennial Blvd.                              <<city>>, <<state>> <<zip>>
+Eugene, OR  97401                                  <<primary_phone>>
+
+
+ORDER NUMBER: <<ordernum_ID>>
+
+TO PROCESS THIS ORDER: https://secure.webhostworks.net/secure/w1a.org/oareg/adm/admin.html
+
+--------------------------------------------------------------------------------
+PERSONAL INFORMATION:
+Conclave ID Number: <<ID_number>>
+<<firstname>> <<lastname>>
+<<address>>
+<<city>>, <<state>> <<zip>>
+<<primary_phone>>
+<<email>>
+Lodge: <<lodge>>
+Chapter: <<chapter>>
+--------------------------------------------------------------------------------
+
+<<purchase_table>>
+
+Problems with the OAreg system? Please e-mail webmaster@w1a.org

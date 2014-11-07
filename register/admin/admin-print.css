@@ -1,0 +1,16 @@
+div#container {
+	left: 10px;
+	width: 100%;
+}
+
+div#toc_container {
+	display: none;
+}
+
+thead {
+	display: table-header-group;
+}
+
+tbody {
+	display: table-row-group;
+}

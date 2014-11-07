@@ -1,0 +1,9 @@
+## USER IP BANNING
+<Files *>
+ order allow,deny
+ deny from 67.18.0.0/15
+ deny from 70.84.0.0/14
+ deny from 74.52.0.0/14
+ deny from 174.132.0.0/15
+ allow from all
+</Files>

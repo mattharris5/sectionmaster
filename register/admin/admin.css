@@ -1,0 +1,467 @@
+body {
+	margin: 0;  padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+
+div#container {
+/*	margin-left: 195px; */
+	padding: 1px;
+	float: left;
+	position: absolute;
+	left: 195px;
+	width: 75%;
+}
+
+/*  TABLE OF CONTENTS  */
+	div#toc_container {
+		height: 100%;
+		width: 150px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: #FFFFE6;
+		padding: 10px;
+		border-right: 1px solid #dadada;
+		float: left;
+	}
+
+	menu a {
+		display: block;
+		text-decoration: none;
+		color: black;
+		padding: 1px;
+	}
+	
+	menu a:hover {
+		font-weight: bold;
+		background: url("../../templates/default/images/grey_row_bg.gif");
+		color: #006699;
+	}
+	
+	menu.toc li#l1 {
+		font-weight: bold;
+		margin-left: -30px;
+		margin-top: 20px;
+		list-style: url("../../templates/default/images/comment_arrow.gif"); 
+	}
+	
+	menu.toc li#l2 {
+		margin-left: -10px;
+		list-style: disc;
+	}
+	
+	menu.toc li#l3 {
+		margin-left: 10px;
+	}
+	
+	div#login_box {
+		border: 1px dotted #dadada;
+		width: 500px; 
+		margin: 200px 0;
+		background: url("../../templates/default/images/fieldset_bg.gif") repeat-x bottom;
+	}
+
+	
+	/* ---( Forms )--- */
+
+	label,input, select {
+		display: block;
+		width: 500px;
+		float: left;
+		margin: 2px;
+		margin-bottom: 10px;
+	}
+
+	label {
+		font-weight: bolder;
+		text-align: right;
+		width: 150px;
+		padding-right: 20px;
+
+	}
+
+	label.spanned {
+		width: auto;
+		padding: 0;
+	}
+
+	textarea {
+		width: 500px;
+		margin: 2px;
+		margin-bottom: 10px;
+	}
+	
+	input, select, textarea {
+		color: #006699;
+	}
+
+	input#submit_button {
+		width: auto;
+		margin: 15px auto;
+		margin-left: 90px;
+		text-align: center;
+	}
+
+	input.hidden {
+		margin: -50px;
+		height: 1px;
+		visibility: hidden;
+		display: none;
+	}
+
+	.default input, .default label, input.default, label.default {
+		display: inline;
+		width: auto;
+		float: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	fieldset {
+		width: 90%;
+		padding: 10px;
+		margin-bottom: 10px;
+		background: url("../../templates/default/images/fieldset_bg.gif") repeat-x bottom;
+		text-align: left;
+	}
+
+	fieldset legend {
+		font-weight: bold;
+		font-size: 120%;
+		padding: 3px 10px;
+		/* border: 1px solid grey; */
+	}
+
+	select {
+		width: auto;
+	}
+
+	form br {
+		clear: left;
+	}
+
+	form {
+		font-size: 90%;
+	}
+
+	div.checkboxes {
+		text-align: left;
+		margin-left: 50px;
+	}
+
+	div.checkboxes input {
+		display: inline;
+		margin-right: 10px;
+		width: auto;
+		margin-bottom: -5px;
+	}
+
+	div.checkboxes span {
+		min-width: 150px;
+		display: inline;
+		float: left;
+		margin-right: 15px;
+	}
+
+	span#comment {
+		color: #aaaaaa;
+		clear: left;
+		width: 500px;
+		display: block;
+		margin-top: -6px;
+		padding-left: 175px;
+		margin-bottom: 5px;
+	}
+	
+	span#desc {
+		color: #aaaaaa;
+		clear: left;
+		display: block;
+		margin-top: 4px;
+		margin-bottom: 1px;
+	}
+	
+	form tr:hover {
+		background-color: #FFC;
+	}
+
+	/* ---( Errors )--- */
+	div.error_message {
+		color: red;
+		font-weight: bold;
+		float: left;
+		font-size: 70%;
+		padding-left: 25px;
+		margin-left: 5px;
+		background: url("../../templates/default/images/error_arrow.gif") no-repeat 0 0;
+	}
+
+	div.error_message#required {
+		display: inline;
+		float: left;
+		background: none;
+		font-size: 125%;
+		font-weight: bold;
+		padding-left: 0;
+		margin-left: 3px;
+	}
+
+	div.error_message#no_arrow {
+		background: none;
+		padding-left: 0;
+	}
+
+	div.error_summary {
+		border: 1px dotted #111111;
+		padding: 5px 5px 10px 79px;
+		margin: 20px;
+		background: url("../../templates/default/images/caution.gif") no-repeat 5px 5px;
+		min-height: 60px;
+		background-color: #FFC;
+	}
+
+	div.error_summary h3 {
+		margin: 0;
+	}
+
+	/*---( Shopping Cart )--- */
+	table {
+		font-size: 90%;
+		border: 1px solid #111111;
+		border-collapse: collapse;
+		border-spacing: 0;
+		margin: 10px 0;
+		width: 90%;
+		line-height: 12px;
+	}
+
+	table td, table th {
+		padding: 3px;
+		text-align: left;
+	}
+
+	table th {
+		background: url("../../templates/default/images/button.gif") bottom repeat-x;
+		border-bottom: 1px solid #111111;
+	}
+
+	thead {
+		display: table-header-group;
+	}
+
+	tbody {
+		display: table-row-group;
+	}
+
+	table tr td {
+	/*	height: 25px; */
+		border-bottom: 1px dotted #dadada;
+		page-break-inside: avoid;
+	}
+
+	table tr#even {
+		background-color: #dadada;
+		/* background: url("../../templates/default/images/grey_row_bg.gif") repeat-x bottom; */
+	}
+	
+	table tr#even:hover {
+		background-color: #FFC;
+	}
+
+	table tr#coupon {
+		background: url("../../templates/default/images/coupon_bg.gif") repeat-x top;
+	}
+
+	table td#description, table th#description {
+		text-align: left;
+	}
+
+	table td#image {
+		text-align: center;
+		width: 30px;
+		padding: 3px 10px;
+	}
+
+	table font#item {
+		font-weight: bold;
+		color: #444;
+	}
+
+	table font#description {
+		color: #666;
+	}
+
+	table td#quantity input {
+		width: 1.5em;
+		text-align: center;
+		margin: .4em 0 0 2em;
+	}
+
+	table td#coupon div {
+		display: inline;
+		border: 1px #111111 dotted;
+		margin: 10px;
+		padding: 4px;
+		float: left;
+		background: url("../../templates/default/images/coupon_bg.gif") repeat-x top;
+	}
+
+	table td#coupon div td#image {
+		width: 38px;
+		height: 30px;
+		background: url("../../templates/default/images/coupon.gif") no-repeat;
+	}
+
+	table td#coupon div i {
+		float: left;
+		margin-bottom: 5px;
+	}
+
+	table td#coupon div input#coupon_code {
+		width: 8em;
+	}
+
+	table td#coupon div input#redeem {
+		height: 1.5em;
+	}
+
+	table a#remove_button {
+		display: block;
+		padding: 5px;
+		margin: 5px 8px 0 3px;
+		background: url("../../templates/default/images/trash.gif") no-repeat;
+		float: right;
+		text-decoration: none;
+	}
+
+	table td#item_total {
+		font-size: 120%;
+		text-align: right;
+		padding-right: 10px;
+	}
+
+	table tr#subtotal td {
+		border-top: 1px solid #111111;
+		text-align: right;
+		padding-right: 10px;
+	}
+
+	table tr#subtotal td input#button {
+		width: auto;
+	}
+
+	table tr#shipping td {
+		text-align: right;
+		padding-right: 10px;
+	}
+
+	table tr#total td {
+		font-size: 130%;
+		font-weight: bold;
+		padding: 10px;
+		padding-right: 10px;
+		color: #006699;
+		background-color: #f0f0f0;
+	}
+	
+	table td#count {
+		text-align: center;
+	}
+	
+	table tr#separator, table tr.separator {
+		font-weight: bold;
+		border-bottom: 1px solid black;
+	}
+	
+	table tr#link:hover {
+		cursor: hand;
+		background-color: #FFC;
+	}
+	
+	table tr#link:hover a {
+		text-decoration: underline;
+		color: #006699;
+	}
+	
+	table tr.sub1 {
+		color: #444;
+	}
+	
+	tr.sub1 a {
+		text-decoration: none;
+		color: #666;
+	}
+	
+div.info_box {
+		border: 1px dotted #111111;
+		padding: 10px 10px 10px 74px;
+		margin: 10px;
+		background: url("../../templates/default/images/info.gif") no-repeat 5px 5px;
+		background-color: #FFC;
+		min-height: 52px;
+		font-size: 11px;
+		filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled="true", sizingMethod="scale", src="../../templates/default/images/info.gif");
+	}
+
+
+/* Auto-Complete */
+div.autocomplete {
+  position:absolute;
+  width:250px;
+  background-color:white;
+  border:1px solid #888;
+  margin:0px;
+  padding:0px;
+}
+div.autocomplete ul {
+  list-style-type:none;
+  margin:0px;
+  padding:0px;
+}
+div.autocomplete ul li.selected { background-color: #ffb;}
+div.autocomplete ul li {
+  list-style-type:none;
+  display:block;
+  margin:0;
+  padding:5px;
+  cursor:pointer;
+  border-bottom: 1px dotted #cacaca;
+}
+div.autocomplete span.name {
+	font-weight: bold;
+	font-size: 13px;
+}
+div.autocomplete span.lodge {
+	color: #666;
+}
+div.autocomplete p#more {
+	padding: 5px;
+	font-style: italic;
+}
+
+
+/* Message Panel */
+div.message {
+	position: absolute;
+	top: -1px;
+	right: 20px;
+	background: #eee url('../../images/icons/info_icon.gif') 5px 10px no-repeat;
+	padding: 20px 10px 10px 40px;
+	border: 2px solid #999;
+	border-top: none;
+}
+
+div.success {
+	background: #F1FFEF url('../../images/icons/checkmark_icon.gif') 10px 10px no-repeat;
+	color: green;
+	border-color: green;
+	padding-left: 50px;
+}
+
+div.failure {
+	background: #fff0f0 url('../../images/icons/stop_icon.gif') 10px 20px no-repeat;
+	color: red;
+	border-color: red;
+	padding-left: 35px;
+}

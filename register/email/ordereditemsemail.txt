@@ -1,0 +1,16 @@
+SECTION W-1A ONLINE TRADING POST PURCHASE
+
+
+CUSTOMER: <<firstname>> <<lastname>>
+          <<address>>
+          <<city>>, <<state>> <<zip>>
+          <<primary_phone>>
+          <<email>>
+          Lodge: <<lodge>>
+          Chapter: <<chapter>>
+
+HAS PURCHASED THE FOLLOWING ITEMS:
+
+<<purchase_table>>
+
+SHIPPING METHOD: <<shipping_method>>
